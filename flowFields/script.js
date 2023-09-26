@@ -3,8 +3,8 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-ctx.fillStyle ='white';
-ctx.strokeStyle ='white';
+ctx.fillStyle ='black';
+ctx.strokeStyle ='blue';
 ctx.lineWidth = 1;
 class Particle{
     constructor(effect){
@@ -62,3 +62,18 @@ function animate(){
     requestAnimationFrame(animate);
 }
 animate();
+let isBlue = false; 
+document.addEventListener("click", function(event) {
+  if (isBlue) {
+    ctx.fillStyle = 'black';
+    ctx.strokeStyle = 'blue';
+    canvas.style.backgroundColor = 'black';
+  } else {
+    ctx.fillStyle = 'blue';
+    ctx.strokeStyle = 'black';
+    canvas.style.backgroundColor = 'blue';
+  }
+
+  // Invert the state for the next click
+  isBlue = !isBlue;
+});
