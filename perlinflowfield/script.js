@@ -11,8 +11,9 @@ class Particle{
         this.effect = effect;
         this.x =Math.floor( Math.random()*this.effect.width);
         this.y= Math.floor(Math.random()* this.effect.height);
-        this.speedX = Math.random()*10-2.5;
-        this.speedY = Math.random()*5-2.5;
+        this.speedX;
+        this.speedY;
+        this.speedModifier  = Math.floor(Math.random() * 5 +1);
         this.angle = 0;
         this.maxLength =Math.floor(Math.random * 200 +10);
         this.history = [{x:this.x, y:this.y}];
@@ -37,8 +38,8 @@ class Particle{
         this.speedX = Math.cos(this.angle);
         this.speedY = Math.sin(this.angle);
 
-        this.x += this.speedX;
-        this.y += this.speedY;
+        this.x += this.speedX * this.speedModifier;
+        this.y += this.speedY * this.speedModifier;
 
         this.history.push({x:this.x, y:this.y})
         if(this.history.length > this.maxLength){
@@ -55,7 +56,9 @@ class Effect{
         this.cellsize = 20;
         this.rows;
         this.cols;
-        this.flowfield = []
+        this.flowfield = [];
+        this.curve= 0.5;
+        this.zoom = 0.2;
         this.init();
     }
     init(){
@@ -65,7 +68,7 @@ class Effect{
         this.flowfield = [];
         for (let y= 0; y < this.rows; y++){
             for(let x = 0; x < this.cols; x++){
-                let angle = (Math.cos(x)+Math.sin(y)) * 0.5; 
+                let angle = (Math.cos(x*this.zoom)+Math.sin(y*this.zoom)) * this.curve; 
                 this.flowfield.push(angle);
             }
             
