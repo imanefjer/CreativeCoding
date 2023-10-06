@@ -5,10 +5,10 @@ Welcome to the Creative Code Playground! This repository showcases various creat
 
 ## Table of Contents
 
+- [Features](#features)
 - [Particle Canvas](#particle-canvas)
 - [Particle Motion](#particle-motion)
 - [Flowfield Animation](#flowfield-animation)
-- [Features](#features)
 
 ---
 
@@ -39,11 +39,11 @@ The Flowfield Animation project is an HTML canvas animation that simulates parti
 
 ---
 ## Features
--Stunning and mesmerizing visual effects.
--Customizable settings and parameters.
--Real-time interaction and animation.
--Export and save your creations.
--Easily integrate these simulations into your own projects.
+- [Stunning and mesmerizing visual effects.]
+- [Customizable settings and parameters.]
+- [Real-time interaction and animation.]
+- [Export and save your creations.]
+- [Easily integrate these simulations into your own projects.]
 
 
 Thank you for exploring these creative code projects! 
