@@ -20,14 +20,14 @@ Welcome to the Creative Code Playground! This repository showcases various creat
 
 ---
 ## Particle Canvas
-![Project Image](particuleCanvas.png)
+![Project Image](images/particuleCanvas.png)
 
 The Particle Canvas project is a simple HTML canvas animation that generates and renders particles on the screen. It's a basic example of creative coding, where particles are randomly distributed on the canvas, creating an interesting visual effect.
 
 ---
 
 ## Particle Motion
-![Project Image](particule.png)
+![Project Image](images/particule.png)
 
 
 The Particle Motion project is an HTML canvas animation that generates and renders particles with motion trails on the screen. It adds motion and a dynamic element to the basic particle simulation, resulting in a visually engaging experience.
@@ -35,7 +35,7 @@ The Particle Motion project is an HTML canvas animation that generates and rende
 ---
 
 ## Flowfield Animation
-![Project Image](flowfield.png)
+![Project Image](images/flowfield.png)
 
 
 The Flowfield Animation project is an HTML canvas animation that simulates particle motion based on a flowfield. It uses a grid of vectors to guide the movement of particles, creating intriguing patterns and visual effects.
