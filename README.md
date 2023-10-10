@@ -36,6 +36,9 @@ The Particle Motion project is an HTML canvas animation that generates and rende
 
 ## Flowfield Animation
 ![Project Image](images/flowfield.png)
+![Project Image](images/field.png)
+![Project Image](images/field2.png)
+
 
 
 The Flowfield Animation project is an HTML canvas animation that simulates particle motion based on a flowfield. It uses a grid of vectors to guide the movement of particles, creating intriguing patterns and visual effects.
